@@ -1,0 +1,170 @@
+/*
+ * [Modified] Modern CSS Reset
+ * @link https://github.com/hankchizljaw/modern-css-reset
+*/
+/* Box sizing rules */
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  font-size: 100%;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+  overflow-x: hidden;
+}
+
+/* Make images easier to work with */
+img {
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+:root {
+  --dark-grayishblue:hsl(227, 10%, 46%);
+  --dark-cyan:hsl(185, 75%, 39%);
+  --very-dark-blue:hsl(229, 23%, 23%);
+  --transparent-white:hsla(0, 0%, 100%, 0.75);
+  --dark-grey:hsl(0, 0%, 59%);
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 18px;
+}
+
+.container {
+  min-height: 100vh;
+  width: 100vw;
+  background-color: var(--dark-cyan);
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+#top {
+  z-index: -1;
+  position: absolute;
+  right: 40%;
+  top: -200%;
+}
+
+#bottom {
+  z-index: -1;
+  position: absolute;
+  bottom: -200%;
+  left: 40%;
+}
+
+.card {
+  margin: 10vh auto;
+  position: relative;
+  background-color: white;
+  border-radius: 10px;
+  z-index: 1;
+  max-width: 80vw;
+}
+
+.main-card {
+  background-color: white;
+  border-radius: 10px;
+  z-index: 2;
+}
+
+.main-card .topimg {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  max-width: 80vw;
+}
+
+.main-card .content {
+  margin-top: -15%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.main-card .content img {
+  border-radius: 50%;
+  border: 5px solid white;
+}
+
+.main-card .content .name {
+  margin-top: 5%;
+  font-weight: 700;
+}
+
+.main-card .content .name .age {
+  font-weight: 400;
+  color: var(--dark-grey);
+}
+
+.main-card .content .city {
+  font-weight: 400;
+  color: var(--dark-grey);
+  margin-bottom: 5%;
+}
+
+.main-card .footer {
+  z-index: 2;
+  font-weight: 900;
+  border-top: 0.01px solid var(--dark-grey);
+  padding: 10% 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+}
+
+.main-card .footer .text {
+  font-size: 0.7rem;
+  color: var(--dark-grey);
+}
+/*# sourceMappingURL=main.css.map */
